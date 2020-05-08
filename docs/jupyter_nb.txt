@@ -1,4 +1,0 @@
-- https://jupyter.org/documentation
-- [Examples of Jupyter notebooks for sciences](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#physics-chemistry-and-biology)
-- [VSCode JN tutorial](https://code.visualstudio.com/docs/python/jupyter-support) and [youtube video](https://www.youtube.com/watch?v=rcBpQ9fwNTY)
-- [datacamp tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
