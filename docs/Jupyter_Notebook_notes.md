@@ -22,7 +22,7 @@ These notes were taken by [ Matthew Haines](hainesm6@gmail.com) as part of learn
 
 ## Installation and usage
 
-Making Jupyter Notebooks requires installation of the [jupyter metapackage](https://pypi.org/project/jupyter/) within the python environment. This can be accomplished by a number of package installers including pip:
+Making Jupyter Notebooks requires installation of the [jupyter metapackage](https://pypi.org/project/jupyter/) within a python environment. This can be accomplished by a number of package installers including pip:
 
 ```python
 pip install jupyter
@@ -45,15 +45,15 @@ $ jupyter notebook
   - `%load` inserts code from an exertnal script.
   - `%run` runs a file within the interpreter. This can useful for keeping code dry between modules, although it is worth considering packaging where required.
 - Widgets can be incorporated to enable simple UIs e.g. [dashboards](https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/).
-- Python CLIs e.g. [click](https://click.palletsprojects.com/en/7.x/) can be implemented within notebooks by calling a python interpreter using `%%script`. This is useful for documenting the development of Python CLIs.
+- `%%script` is equivalent to a shebang and can be used to call a specific interpreter. One application of this is in the development of Python CLIs, for instance those developed using [click](https://click.palletsprojects.com/en/7.x/). This is achieved by calling `%%script python` and overriding sys.argv e.g. [example][click_cli_example].
 
 ## Why use Jupyter Notebook?
 
-The Jupyter Notebook enables a variety of content within one document. For instance: code, explanatory markdown text, mathematics, images etc. This makes is particularly desirable for exploring data and code interactively and dynamically.
+The Jupyter Notebook enables a variety of content within one document. For instance: code, explanatory markdown text, mathematics, images etc. This makes it particularly desirable for exploring data and code interactively and dynamically.
 
 ## Sharing Jupyter Notebooks
 
-Often you wouldn't share the ".ipynb" directly. One option is to convert to a different file extension. This is achievable using the "`$ jupyter nbconvert`" command (use the "`--help`" flag for documentation).
+Often you wouldn't share the ".ipynb" directly. One option is to convert to a different file extension. One option is to use the "`$ jupyter nbconvert`" subcommand (use the "`--help`" flag for documentation).
 
 Alrterantively, the [nbviewer](https://nbviewer.jupyter.org/) can be used:
 
@@ -68,3 +68,4 @@ Alrterantively, the [nbviewer](https://nbviewer.jupyter.org/) can be used:
   - Limit the number of characters per line to the width of the cell.
 
 [jn_in_vscode_url]: [https://code.visualstudio.com/docs/python/jupyter-support]
+[click_cli_example]: [https://stackoverflow.com/questions/47820040/using-click-library-in-jupyter-notebook-cell]
