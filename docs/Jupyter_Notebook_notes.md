@@ -42,9 +42,13 @@ $ jupyter notebook
 
 ### Jupyter Notebooks in VSCode
 
-- Within VSCode, code cells can be in 3 states: unselected, command mode and edit mode. Which state is indicated by the vertical bar to the left of the cell. Once a cell has been selected, you can switch to and from command and edit modes using the `ENTER` and `ESC` keys, respectively.
+- Within VSCode, cells can be in 3 states: unselected, command mode and edit mode. Once a cell has been selected, you can switch to and from command and edit modes using the `ENTER` and `ESC` keys, respectively.
 - Plots can be further explored by clicking theplot viewer buttton in the top, lefthand corner.
-- Debugging
+- Debugging involves:
+  - Conversion to a *.py* file.
+  - Either debugging the entire file by executing the `Python: Debug Current File in Python Interactive Window` command from the command palette.
+  - Or Debugging individual cells.
+  - To convert back to a *.ipynb*, execute the `Python: Export Current Python File as Jupyter Notebook` command from the command palette, replacing the existing file.
 
 Some useful keyboard shortcuts:
 
@@ -57,6 +61,8 @@ Ctrl+Enter | Runs currently selected cell
 M | In command mode, switch to Markdown
 Y | In command mode, switch to code
 L | Toggle line numbers
+ENTER | In command mode, switch to edit mode
+ESC | In edit mode, switch to command mode
 
 ## Useful features
 
@@ -84,7 +90,7 @@ Alrterantively, the [nbviewer](https://nbviewer.jupyter.org/) can be used:
 ## Suggestions
 
 - As per most things, keep Jupyter Notebooks versioned controlled via Git and shareable via GitHub.
-- **Use VSCode over the web app**. VSCode seems to have more functionality and it integrates well for those using WSL. [**JupyterLab**](https://jupyterlab.readthedocs.io/en/stable/index.html) is another alternative which could provide useful extensions and functionality. However, I have not yet explored this option.
+- **Use VSCode over the web app**. VSCode integrates well for those using WSL and has a lot of existing functionality. Debugging is a bit challenging but doable. [**JupyterLab**](https://jupyterlab.readthedocs.io/en/stable/index.html) is another alternative which could provide useful extensions and functionality. However, I have not yet explored this option.
 - Aim to keep cells within notebooks simple and structured:
   - Aim to import packages on the first line of the first cell.
   - Limit the number of characters per line to the width of the cell.
