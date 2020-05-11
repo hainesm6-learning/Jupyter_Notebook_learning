@@ -3,7 +3,9 @@
 - [Jupyter Notebook notes](#jupyter-notebook-notes)
   - [Description](#description)
   - [Useful resources](#useful-resources)
-  - [Installation and usage](#installation-and-usage)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Jupyter Notebooks in VSCode](#jupyter-notebooks-in-vscode)
   - [Useful features](#useful-features)
   - [Why use Jupyter Notebook?](#why-use-jupyter-notebook)
   - [Sharing Jupyter Notebooks](#sharing-jupyter-notebooks)
@@ -11,7 +13,7 @@
 
 ## Description
 
-These notes were taken by [ Matthew Haines](hainesm6@gmail.com) as part of learning Jupyter Notebook.
+These notes were taken by [Matthew Haines](hainesm6@gmail.com) as part of learning Jupyter Notebook.
 
 ## Useful resources
 
@@ -20,13 +22,15 @@ These notes were taken by [ Matthew Haines](hainesm6@gmail.com) as part of learn
 - [VSCode JN tutorial][jn_in_vscode_url]
 - [datacamp tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook) - This article is free and from my perspective struck a good balance between being practically useful and yet concise.  
 
-## Installation and usage
+## Installation
 
 Making Jupyter Notebooks requires installation of the [jupyter metapackage](https://pypi.org/project/jupyter/) within a python environment. This can be accomplished by a number of package installers including pip:
 
 ```python
 pip install jupyter
 ```
+
+## Usage
 
 Once jupyter has been installed within your environment, you can work with jupyter notebooks either using the web application:
 
@@ -35,6 +39,24 @@ $ jupyter notebook
 ```
 
  or an IDE e.g. [VSCode][jn_in_vscode_url]. Note the web application can also be accessed in WSL by pasting the url containing the port and token into a web browser.
+
+### Jupyter Notebooks in VSCode
+
+- Within VSCode, code cells can be in 3 states: unselected, command mode and edit mode. Which state is indicated by the vertical bar to the left of the cell. Once a cell has been selected, you can switch to and from command and edit modes using the `ENTER` and `ESC` keys, respectively.
+- Plots can be further explored by clicking theplot viewer buttton in the top, lefthand corner.
+- Debugging
+
+Some useful keyboard shortcuts:
+
+Key | Action
+--- | ------
+A | In command mode, add cell above
+B | In command mode, add cell below
+Up/down arrows | Toggle between cells
+Ctrl+Enter | Runs currently selected cell
+M | In command mode, switch to Markdown
+Y | In command mode, switch to code
+L | Toggle line numbers
 
 ## Useful features
 
